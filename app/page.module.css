@@ -28,6 +28,15 @@
   height: auto;
 }
 
+.tagline {
+  max-width: 35ch;
+  color: rgba(244, 248, 255, 0.92);
+  font-size: clamp(1rem, 1.6vw, 1.12rem);
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  text-wrap: balance;
+}
+
 .buttonsWrap {
   display: flex;
   margin-top: 0.2rem;

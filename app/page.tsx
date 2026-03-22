@@ -16,6 +16,9 @@ export default function Home() {
             className={styles.logo}
           />
         </div>
+        <p className={styles.tagline}>
+          Open framework to build realtime web3 agents not skills
+        </p>
         <div className={styles.buttonsWrap}>
           <HeroButtons />
         </div>
