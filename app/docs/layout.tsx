@@ -47,11 +47,26 @@ export default function DocsLayout({
 
       <main className={styles.main}>
         <div className={styles.topBar}>
-          <span className={styles.topBarDot} aria-hidden="true" />
-          <p className={styles.topBarText}>Openfi Documentation</p>
+          <div className={styles.topBarMeta}>
+            <span className={styles.topBarDot} aria-hidden="true" />
+            <div className={styles.topBarTitleWrap}>
+              <p className={styles.topBarText}>Openfi Documentation</p>
+              <p className={styles.topBarSubText}>Guides, APIs, standards, and examples</p>
+            </div>
+          </div>
+          <div className={styles.topBarActions}>
+            <Link href="/demo" className={styles.topBarLink}>
+              Demo
+            </Link>
+            <Link href="/" className={styles.topBarLinkPrimary}>
+              Home
+            </Link>
+          </div>
         </div>
         <div className={styles.content}>
-          {children}
+          <section className={styles.articleShell}>
+            <article className={styles.articleSurface}>{children}</article>
+          </section>
         </div>
       </main>
     </div>

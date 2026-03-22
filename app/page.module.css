@@ -3,7 +3,7 @@
   min-height: 100vh;
   width: 100%;
   overflow: hidden;
-  background: #0e4db8;
+  background: linear-gradient(128deg, #0f4fbf 0%, #0b47aa 62%, #0a419c 100%);
 }
 
 .content {
@@ -14,7 +14,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: clamp(1.2rem, 2vw, 1.8rem);
+  gap: clamp(1.35rem, 2.2vw, 2rem);
   padding-left: clamp(1.2rem, 13vw, 12rem);
   padding-right: 1rem;
 }
@@ -30,21 +30,24 @@
 
 .buttonsWrap {
   display: flex;
+  margin-top: 0.2rem;
 }
 
 .flowerWrap {
-  --flower-size: clamp(540px, 72vw, 1080px);
+  --flower-size: clamp(410px, 56vw, 760px);
   position: absolute;
-  top: 53%;
-  right: calc(var(--flower-size) / -2);
+  top: 52%;
+  right: calc(var(--flower-size) / -2.25);
   width: var(--flower-size);
   height: var(--flower-size);
   transform: translateY(-50%);
   z-index: 1;
+  opacity: 0.98;
 }
 
 .flower {
   object-fit: contain;
+  filter: drop-shadow(0 12px 18px rgba(5, 33, 85, 0.16));
 }
 
 @media (max-width: 900px) {
@@ -59,7 +62,8 @@
   }
 
   .flowerWrap {
-    --flower-size: clamp(430px, 115vw, 750px);
-    top: 40%;
+    --flower-size: clamp(320px, 84vw, 560px);
+    top: 36%;
+    right: calc(var(--flower-size) / -2.4);
   }
 }

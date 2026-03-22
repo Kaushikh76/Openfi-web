@@ -30,30 +30,43 @@ body {
 .prose hr { border: none; border-top: 1px solid #e5e7eb; margin: 1.5rem 0; }
 
 /* Docs page accent theme */
-.docs-prose { max-width: 100%; color: #1f2937; }
+.docs-prose {
+  max-width: 100%;
+  color: #1f2937;
+}
 .docs-prose h1 {
-  color: #0f2e64;
-  font-size: clamp(1.8rem, 2.5vw, 2.25rem);
-  margin-bottom: 1rem;
-  letter-spacing: -0.01em;
+  color: #0f346f;
+  font-size: clamp(1.85rem, 2.5vw, 2.35rem);
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.015em;
+  line-height: 1.15;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid #dbe7ff;
 }
 .docs-prose h2 {
-  color: #123e86;
-  font-size: clamp(1.22rem, 1.8vw, 1.45rem);
-  margin-top: 2rem;
-  margin-bottom: 0.75rem;
+  color: #17458f;
+  font-size: clamp(1.24rem, 1.8vw, 1.48rem);
+  margin-top: 2.1rem;
+  margin-bottom: 0.82rem;
+  line-height: 1.3;
 }
 .docs-prose h3 {
-  color: #1d4e9f;
-  font-size: 1.05rem;
-  margin-top: 1.25rem;
+  color: #2358a8;
+  font-size: 1.06rem;
+  margin-top: 1.35rem;
   margin-bottom: 0.5rem;
+  line-height: 1.35;
 }
 .docs-prose p {
-  font-size: 0.98rem;
-  line-height: 1.75;
-  margin-bottom: 0.9rem;
+  font-size: 0.99rem;
+  line-height: 1.78;
+  margin-bottom: 0.95rem;
   color: #334155;
+}
+.docs-prose ul,
+.docs-prose ol {
+  margin-bottom: 0.95rem;
+  padding-left: 1.35rem;
 }
 .docs-prose li {
   font-size: 0.95rem;
@@ -62,26 +75,28 @@ body {
   color: #334155;
 }
 .docs-prose a {
-  color: #0e4db8;
+  color: #0f4ebc;
   font-weight: 500;
   text-decoration: none;
-  border-bottom: 1px solid rgba(14, 77, 184, 0.28);
+  border-bottom: 1px solid rgba(15, 78, 188, 0.28);
 }
 .docs-prose a:hover {
-  border-bottom-color: rgba(14, 77, 184, 0.65);
+  border-bottom-color: rgba(15, 78, 188, 0.7);
 }
 .docs-prose code {
-  border: 1px solid #d8e4ff;
-  background: #ecf2ff;
+  border: 1px solid #d6e2fb;
+  background: #eef4ff;
   color: #0f3f95;
-  border-radius: 6px;
-  padding: 0.14rem 0.4rem;
+  border-radius: 0.42rem;
+  padding: 0.14rem 0.43rem;
+  font-size: 0.86rem;
 }
 .docs-prose pre {
-  background: linear-gradient(180deg, #0d2a5f 0%, #0b234f 100%);
-  border: 1px solid #20498f;
-  border-radius: 12px;
-  padding: 1rem 1.2rem;
+  background: linear-gradient(180deg, #102f67 0%, #0b2552 100%);
+  border: 1px solid #2857a0;
+  border-radius: 0.88rem;
+  padding: 1rem 1.14rem;
+  margin-bottom: 1.15rem;
 }
 .docs-prose pre code {
   border: 0;
@@ -90,30 +105,30 @@ body {
   padding: 0;
 }
 .docs-prose blockquote {
-  border-left: 4px solid #3b82f6;
+  border-left: 4px solid #3d86f4;
   background: #f2f7ff;
   color: #31548f;
-  padding: 0.65rem 0.95rem;
-  border-radius: 8px;
+  padding: 0.7rem 0.95rem;
+  border-radius: 0.6rem;
 }
 .docs-prose table {
   border-collapse: separate;
   border-spacing: 0;
   overflow: hidden;
-  border: 1px solid #dbe7ff;
-  border-radius: 10px;
-  margin-bottom: 1.2rem;
+  border: 1px solid #d8e4ff;
+  border-radius: 0.74rem;
+  margin-bottom: 1.22rem;
 }
 .docs-prose th {
-  background: #eef4ff;
+  background: #edf4ff;
   color: #0f2e64;
   border: 0;
-  border-bottom: 1px solid #dbe7ff;
+  border-bottom: 1px solid #d8e4ff;
   padding: 0.62rem 0.78rem;
 }
 .docs-prose td {
   border: 0;
-  border-bottom: 1px solid #edf2ff;
+  border-bottom: 1px solid #edf3ff;
   padding: 0.58rem 0.78rem;
 }
 .docs-prose tr:last-child td { border-bottom: 0; }
